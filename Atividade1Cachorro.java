@@ -1,52 +1,26 @@
-public class Cachorro {
+public class Atividade1 {
     // Atributos
     private String nome;
     private String raca;
-    private int idade;
+    private String pata;
 
-    // Construtor
-    public Cachorro(String nome, String raca, int idade) {
+    public Atividade1(String nome, String raca, String pata) {
         this.nome = nome;
         this.raca = raca;
-        this.idade = idade;
+        this.pata = pata;
     }
 
     // Métodos
     public void latir() {
-        System.out.println(nome + " está latindo!");
+        System.out.println("O" + nome + " está latindo!");
     }
 
-    public void envelhecer() {
-        idade++;
-        System.out.println(nome + " agora tem " + idade + " anos.");
+    public void dar_patinha() {
+        System.out.println(nome + " esta te comprimentando ");
     }
 
     public void mostrarDetalhes() {
-        System.out.println("Cachorro: " + nome + ", Raça: " + raca + ", Idade: " + idade + " anos.");
+        System.out.println("Cachorro: " + nome + ", Raça: " + raca + ", Idade: " + pata + " anos.");
     }
 
-    // Getters e Setters (opcional)
-    public String getNome() {
-        return nome;
-    }
-
-    public String getRaca() {
-        return raca;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setRaca(String raca) {
-        this.raca = raca;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
 }
